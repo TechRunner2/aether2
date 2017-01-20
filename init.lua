@@ -1,4 +1,6 @@
 aether2_minetest = {}
+local default_path = minetest.get_modpath("aether2_minetest")
+
 
 --Load File
  dofile(minetest.get_modpath("aether2_minetest") .. "/config.txt")
