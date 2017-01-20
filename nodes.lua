@@ -1,4 +1,5 @@
 -- Groups = crumbly =dirt, cracky = stone, snappy = leaves, choppy = wood, explody, oddly_breakable_by_hand
+-- New groups = mushy(dirt), crackly(stone), temple(temple blocks)
 
 --Dirts
 minetest.register_node("aether2_minetest:aether_dirt", {
