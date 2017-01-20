@@ -86,3 +86,15 @@ minetest.register_node("aether2_minetest:golden_oak_planks", {
   groups =  {choppy=1, oddly_breakable_by_hand=1},
   sounds = default.node_sound_wood_defaults(),
 })
+
+minetest.register_node("aether2_minetest:ambrosium_torch", {
+  description = "Ambrosium Torch",
+  drawtype = "mesh",
+  mesh = "ambrosium_torch_floor.obj",
+  inventory_image = "ambrosium_torch.png",
+  wield_image - "ambrosium_torch.png",
+  tiles = {{
+        name = "ambrosium_torch_animated.png",
+        animation = {type = "vertical_frames", aspect_w = 16, aspect_h = 16, length = 3.3}
+  }}
+})
