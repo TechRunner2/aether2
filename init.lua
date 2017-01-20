@@ -2,6 +2,7 @@ aether2_minetest = {}
 
 --Load File
  dofile(minetest.get_modpath("aether2_minetest") .. "/config.txt")
+ dofile(minetest.get_modpath("aether2_minetest") .. "/aliases.lua")
 
 if run_ABM then
 	dofile(minetest.get_modpath('aether2_minetest')..'/abm.lua')

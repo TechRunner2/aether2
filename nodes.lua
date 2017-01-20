@@ -66,23 +66,23 @@ minetest.register_node("aether2_minetest:skyroot_leaves", {
   paramtype = "light",
   is_ground_content = false,
   groups = {snappy = 3, leafdecay = 3, leaves = 1},
-  drop = {
-    max_items = 1,
-    items = {
-      {
-        -- player will get sapling with 1/20 chance
-        items = {'aether2_minetest:skyroot_sapling'},
-        rarity = 20,
-      },
-      {
-        -- player will get leaves only if he get no saplings,
-        -- this is because max_items is 1
-        items = {'default:leaves'},
-      }
-    }
-  },
+
   sounds = default.node_sound_leaves_defaults(),
 
   after_place_node = default.after_place_leaves,
 })
+
+
+minetest.register_node("aether2_minetest:skyroot_planks", {
+  description = "Skyroot Planks",
+  tiles = {"skyroot_planks.png"},
+  groupts = {choppy=1, oddly_breakable_by_hand=1},
+  sounds = default.node_sound_wood_defaults(),
+})
+
+minetest.register_node("aether2_minetest:golden_oak_planks", {
+  description = "Golden Oak Planks",
+  tiles = {"golden_oak_planks"},
+  groups =  {choppy=1, oddly_breakable_by_hand=1},
+  sounds = default.node_sound_wood_defaults(),
 })
