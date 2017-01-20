@@ -87,6 +87,7 @@ minetest.register_node("aether2_minetest:golden_oak_planks", {
   sounds = default.node_sound_wood_defaults(),
 })
 
+--Placeable Items
 minetest.register_node("aether2_minetest:ambrosium_torch", {
   description = "Ambrosium Torch",
   drawtype = "mesh",
