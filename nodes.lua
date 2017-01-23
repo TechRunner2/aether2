@@ -44,7 +44,7 @@ minetest.register_node("aether2:golden_oak_logs", {
 	tiles = {"golden_oak_log_top.png", "golden_oak_log_top.png", "golden_oak_log.png"},
 	paramtype2 = "facedir",
 	is_ground_content = false,
-	groups = {tree = 1, choppy = 2,},
+	groups = {aehtertree=2 },
   on_place = minetest.rotate_node,
 
   drop = {
@@ -86,6 +86,7 @@ minetest.register_node("aether2:skyroot_planks", {
 --Placeable Items
 minetest.register_node("aether2:ambrosium_torch", {
   description = "Ambrosium Torch",
+  groups = {oddly_breakable_by_hand=1},
   drawtype = "mesh",
   mesh = "ambrosium_torch_floor.obj",
   inventory_image = "ambrosium_torch.png",

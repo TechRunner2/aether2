@@ -21,7 +21,7 @@ minetest.register_tool("aether2:axe_skyroot", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehtertree = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=60}
+      aehtertree = {times={[1]=1.25}, uses=60}
     },
     damage_groups = {fleshy=3},
   }
