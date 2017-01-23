@@ -1,13 +1,13 @@
 minetest.register_craft({
-  output = 'aether2_minetest:skyroot_planks',
+  output = 'aether2:skyroot_planks 4',
   recipe = {
-    {'aether2_minetest:skyroot_logs'},
+    {'aether2:skyroot_logs'},
   }
 })
 
 minetest.register_craft({
-  output = 'aether2_minetest:golden_oak_planks',
+  output = 'aether2:golden_oak_planks 4',
   recipe = {
-    {'aether2_minetest:golden_oak_logs'},
+    {'aether2:golden_oak_logs'},
   }
 })
