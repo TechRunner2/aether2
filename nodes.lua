@@ -2,12 +2,16 @@
 -- New groups = aethersoil, aetherstone, temple, dungeon ,aehtertree
 
 --Dirts
+minetest.register_node("aether2:quicksoil", {
+  description = 'Quick Soil',
+  tiles = {"quicksoil.png"},
+  groups = {crumbly = 1},
+})
+
 minetest.register_node("aether2:aether_dirt", {
   description = 'Aether Dirt',
   tiles = {"aether_dirt.png"},
   groups = {crumbly = 1},
-
-
 })
 
 minetest.register_node("aether2:aether_dirt_with_grass", {
@@ -79,8 +83,7 @@ minetest.register_node("aether2:golden_oak_leaves", {
 minetest.register_node("aether2:skyroot_planks", {
   description = "Skyroot Planks",
   tiles = {"skyroot_planks.png"},
-  groupts = {choppy=1, oddly_breakable_by_hand=1},
-
+  groupts = {choppy=1, oddly_breakable_by_hand=1, snappy = 1,},
 })
 
 --Placeable Items

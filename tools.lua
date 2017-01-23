@@ -1,4 +1,4 @@
---Groups = aetherstone, aehterdirt, aethertemple
+--Groups = aetherstone, aetherdirt, aethertemple
 
 --Skyroot
 minetest.register_tool("aether2:pick_skyroot", {
@@ -8,7 +8,7 @@ minetest.register_tool("aether2:pick_skyroot", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aetherstone = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=60}
+      aetherstone = {times={[1]=1.25}, uses=60}
     },
     damage_groups = {fleshy=3},
   }
@@ -21,7 +21,7 @@ minetest.register_tool("aether2:axe_skyroot", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehtertree = {times={[1]=1.25}, uses=60}
+      aethertree = {times={[1]=1.25}, uses=60}
     },
     damage_groups = {fleshy=3},
   }
@@ -34,7 +34,7 @@ minetest.register_tool("aether2:shovel_skyroot", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehterdirt = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=60}
+      aetherdirt = {times={[1]=1.25}, uses=60}
     },
     damage_groups = {fleshy=3},
   }
@@ -48,7 +48,7 @@ minetest.register_tool("aether2:pick_hollystone", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aetherstone = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=132}
+      aetherstone = {times={[1]=1, [2]=1.5, [3]=1.75}, uses=132}
     },
     damage_groups = {fleshy=3},
   }
@@ -61,7 +61,7 @@ minetest.register_tool("aether2:axe_hollystone", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehtertree = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=132}
+      aethertree = {times={[1]=1, [2]=1.5, [3]=1.75}, uses=132}
     },
     damage_groups = {fleshy=3},
   }
@@ -74,7 +74,7 @@ minetest.register_tool("aether2:shovel_hollystone", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehterdirt = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=132}
+      aetherdirt = {times={[1]=1, [2]=1.5, [3]=1.75}, uses=132}
     },
     damage_groups = {fleshy=3},
   }
@@ -88,7 +88,7 @@ minetest.register_tool("aether2:pick_zanite", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aetherstone = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=251}
+      aetherstone = {times={[1]=.75, [2]=1, [3]=1.5}, uses=251}
     },
     damage_groups = {fleshy=3},
   }
@@ -101,7 +101,7 @@ minetest.register_tool("aether2:axe_zanite", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehtertree = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=251}
+      aethertree = {times={[1]=.75, [2]=1, [3]=1.5}, uses=251}
     },
     damage_groups = {fleshy=3},
   }
@@ -114,7 +114,7 @@ minetest.register_tool("aether2:shovel_zanite", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehterdirt = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=251}
+      aetherdirt = {times={[1]=.75, [2]=1, [3]=1.5}, uses=251}
     },
     damage_groups = {fleshy=3},
   }
@@ -128,7 +128,7 @@ minetest.register_tool("aether2:pick_gavitite", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aetherstone = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=1562}
+      aetherstone = {times={[1]=.25, [2]=.5, [3]=1}, uses=1562}
     },
     damage_groups = {fleshy=3},
   }
@@ -141,7 +141,7 @@ minetest.register_tool("aether2:axe_gavitite", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehtertree = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=1562}
+      aethertree = {times={[1]=.25, [2]=.5, [3]=1}, uses=1562}
     },
     damage_groups = {fleshy=3},
   }
@@ -154,7 +154,7 @@ minetest.register_tool("aether2:shovel_gavitite", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehterdirt = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=1562}
+      aetherdirt = {times={[1]=.25, [2]=.5, [3]=1}, uses=1562}
     },
     damage_groups = {fleshy=3},
   }
@@ -168,7 +168,7 @@ minetest.register_tool("aether2:pick_valkyrie", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aetherstone = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=1562}
+      aetherstone = {times={[1]=.25, [2]=.5, [3]=1}, uses=1562}
     },
     damage_groups = {fleshy=3},
   }
@@ -181,7 +181,7 @@ minetest.register_tool("aether2:axe_valkyrie", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehtertree = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=1562}
+      aethertree = {times={[1]=.25, [2]=.5, [3]=1}, uses=1562}
     },
     damage_groups = {fleshy=3},
   }
@@ -194,7 +194,7 @@ minetest.register_tool("aether2:shovel_valkyrie", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehterdirt = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=1562}
+      aetherdirt = {times={[1]=.25, [2]=.5, [3]=1}, uses=1562}
     },
     damage_groups = {fleshy=3},
   }
@@ -221,7 +221,7 @@ minetest.register_tool("aether2:axe_arkenium", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehtertree = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=132}
+      aethertree = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=132}
     },
     damage_groups = {fleshy=3},
   }
@@ -234,7 +234,7 @@ minetest.register_tool("aether2:shovel_arkenium", {
     full_punch_interval = 1.3,
     max_drop_level =0,
     groupcaps={
-      aehterdirt = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=132}
+      aetherdirt = {times={[1]=.75, [2]=2.0, [3]=1.00}, uses=132}
     },
     damage_groups = {fleshy=3},
   }
