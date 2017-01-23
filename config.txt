@@ -1,4 +1,3 @@
---Enable or Disable parts of the mod
 run_ABM = true
 
 enable_mobs = true
