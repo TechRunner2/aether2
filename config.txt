@@ -1,18 +1,18 @@
 --Enable or Disable parts of the mod
-run_ABM = false
+run_ABM = true
 
-enable_mobs = false
+enable_mobs = true
 
-enable_crafting = false
+enable_crafting = true
 
-enable_nodes = false
+enable_nodes = true
 
-enable_cooking = false
+enable_cooking = true
 
-enable_items = false
+enable_items = true
 
-enable_fuels = false
+enable_fuels = true
 
-enable_tools = false
+enable_tools = true
 
-enable_functions = false
+enable_functions = true
