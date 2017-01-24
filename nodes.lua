@@ -34,8 +34,8 @@ minetest.register_node("aether2:holystone", {
 
 --Trees
 
-minetest.register_node("aether2:skyroot_logs", {
-	description = "skyroot_logs",
+minetest.register_node("aether2:skyroot_log", {
+	description = "skyroot_log",
 	tiles = {"skyroot_log_top.png", "skyroot_log_top.png", "skyroot_log.png"},
 	paramtype2 = "facedir",
 	is_ground_content = false,
@@ -43,8 +43,8 @@ minetest.register_node("aether2:skyroot_logs", {
 	on_place = minetest.rotate_node,
 })
 
-minetest.register_node("aether2:golden_oak_logs", {
-	description = "Golden Oak Logs",
+minetest.register_node("aether2:golden_oak_log", {
+	description = "Golden Oak Log",
 	tiles = {"golden_oak_log_top.png", "golden_oak_log_top.png", "golden_oak_log.png"},
 	paramtype2 = "facedir",
 	is_ground_content = false,
@@ -52,7 +52,13 @@ minetest.register_node("aether2:golden_oak_logs", {
   on_place = minetest.rotate_node,
 
   drop = {
-
+    max_items = 2,
+    items = {
+      item = {'aether2:golden_amber'}
+    },
+    {
+      items = {'aether2:golden_oak_log'}
+    }
 
   }
 })
