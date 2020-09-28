@@ -22,6 +22,8 @@
 
 local S = nether.get_translator
 
+floatlands_flavortext = ""
+
 nether.register_portal("aether_portal", {
 	frame_node_name     = "nether:glowstone",
 	wormhole_node_color = 2, -- 2 is blue
