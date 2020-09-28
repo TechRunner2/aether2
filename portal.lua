@@ -26,7 +26,7 @@ floatlands_flavortext = ""
 
 nether.register_portal("aether_portal", {
 	frame_node_name     = "nether:glowstone",
-	wormhole_node_color = 2, -- 2 is blue
+	wormhole_node_color = 4, -- 4 is cyan
 	particle_texture    = {
 		name      = "nether_particle_anim1.png",
 		animation = {
@@ -44,12 +44,19 @@ This portal seemed to bring us to some kind of heavenly paradise.@1]],
 
 	is_within_realm = function(pos) -- return true if pos is inside the Aether
 		-- TODO: Get these values from mod-wide constants.
-		return (pos.y > 250 and pos.y < 1000)
+		return (pos.y >= 250 and pos.y <= 1000)
 	end,
 
 	find_realm_anchorPos = function(surface_anchorPos, player_name)
-		-- This function isn't needed, since this type of portal always goes to the surface
-		minetest.log("error" , "find_realm_anchorPos called for aether portal")
-		return {x=0, y=0, z=0}
+		-- TODO: implement a surface algorithm that finds land
+		local destination_pos = {x = surface_anchorPos.x ,y = 500, z = surface_anchorPos.z}
+
+		-- a y_factor of 0 makes the search ignore the altitude of the portals (as long as they are in the Aether)
+		local existing_portal_location, existing_portal_orientation = nether.find_nearest_working_portal("aether_portal", destination_pos, 10, 0)
+		if existing_portal_location ~= nil then
+			return existing_portal_location, existing_portal_orientation
+		else
+			return destination_pos
+		end
 	end,
 })
