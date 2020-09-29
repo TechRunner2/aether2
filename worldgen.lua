@@ -1,17 +1,18 @@
-local minbiomey = 250
-local maxbiomey = 1000
-local seed = 555
+aether2.lower_bound = 250
+aether2.upper_bound = 1000
+aether2.seed = 555
 minetest.register_on_generated(function(minp, maxp, blockseed)
 --120 bottom of clouds
 
-if minp.y >= minbiomey and maxp.y <= maxbiomey then
+if minp.y >= aether2.lower_bound and maxp.y <= aether2.upper_bound then
 
 	--the () is the line in api doc
 	--1 seed (2565) 2 octaves (2580) 3 persistance (2596) scale (2524)
-	local perlin = PerlinNoise(seed, 3, 1, 100) --3,10,50 for crazy caves -- 3, 1, 100 for floating islands
+	local perlin = PerlinNoise(aether2.seed, 3, 1, 100) --3,10,50 for crazy caves -- 3, 1, 100 for floating islands
 
 	local height = snowrange_height
-	local air = minetest.get_content_id("air")
+	local air = 
+			etest.get_content_id("air")
 	local dirt = minetest.get_content_id("aether2:aether_dirt")
 	local stone = minetest.get_content_id("aether2:holystone")
 	local water = minetest.get_content_id("default:water_source")
